@@ -1,0 +1,154 @@
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.woff2") format("woff2"), url("fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Medium.woff2") format("woff2"), url("fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Thin.woff2") format("woff2"), url("fonts/Roboto-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Light.woff2") format("woff2"), url("fonts/Roboto-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Bold.woff2") format("woff2"), url("fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  outline: none!important;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  font-family: 'Roboto';
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  padding: 0;
+  border: none;
+  color: currentColor;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+label {
+  cursor: pointer;
+  user-select: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+input[placeholder] {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+:focus::-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  box-shadow: none;
+}
+
+input {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.site-content {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.picture {
+  display: block;
+  overflow: hidden;
+}
+
