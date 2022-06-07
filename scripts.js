@@ -172,6 +172,30 @@ const locations = [
           },
         ]
       },
+      {
+        id: '7',
+        name: 'Haunted Iron Mine',
+        slots: '3',
+        bloodType: 'Brute',
+        loot: [
+          {
+            id: '0',
+            name: 'Iron ore'
+          },
+          {
+            id: '1',
+            name: 'Bone'
+          },
+          {
+            id: '2',
+            name: 'Hell Clarion'
+          },
+          {
+            id: '3',
+            name: 'General Area Loot'
+          },
+        ]
+      },
     ]
   },
   {
