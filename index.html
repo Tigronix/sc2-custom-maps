@@ -26,6 +26,9 @@
           L33.333,1.244L2.487,32.09l216.418,216.418L0,465.423l33.333,33.333L250.249,279.851z"/></svg>
       </div>
       <div class="menu__item">
+        <button class="js-menu-btn text-hover-primary" type="button" data-href="pimp_my_footman">Pimp my FM</button>
+      </div>
+      <div class="menu__item">
         <button class="js-menu-btn text-hover-primary" type="button" data-href="elemental_td">Elemental TD</button>
       </div>
       <div class="menu__item">
@@ -52,13 +55,41 @@
   <!-- <div id="app" class="row g-8"></div> -->
 
   <div class="row g-8 py-6">
+    <article id="pimp_my_footman" class="col-12 col-md-12 col-xl-6">
+      <div class="card js-card">
+        <div class="card-header">
+          <div class="card-title">Pimp My Footman</div>
+        </div>
+        <div class="card-body fs-6">
+          <p class="mb-6">Еще одна карта из WarCraft 3!</p>
+          <ul>
+            <li>Выбери одну из 4 рас</li>
+            <li>Время от времени у тебя появляются войска на базе</li>
+            <li>Круши своих врагов</li>
+            <li>Убей всех для победы</li>
+            <li>Атакуй врагов или существ, чтобы получить минералы и веспен для улучшений</li>
+            <li>Слева на экране меню улучшения войск</li>
+            <li>На главной базе есть общие улучшения</li>
+          </ul>
+        </div>
+        <div class="card-footer fs-6">
+          <ul>
+            <li>Игроки: от 2 до 14</li>
+            <li>Общая сложность карты: 2\5;</li>
+            <li>Контроль войсками: 3/5;</li>
+            <li>Тактическое мышление: 3/5;</li>
+            <li>Среднее время матча: 20-30 минут</li>
+          </ul>
+        </div>
+      </div>
+    </article>
     <article id="elemental_td" class="col-12 col-md-12 col-xl-6">
       <div class="card js-card">
         <div class="card-header">
           <div class="card-title">Elemental TD</div>
         </div>
         <div class="card-body fs-6">
-          <p class="mb-6">Это башенная защита. Почти как Orx, только без карт и прямиком из WarCraft 3.</p>
+          <p class="mb-6">Это башенная защита. Почти как Orx, только без карт и прямиком из WarCraft 3. И кстати год назад эта игра вышла в Steam, как самостоятельный проект :)</p>
           <h4>Основные правила</h4>
           <p class="mb-6">Раз в определенное время выходит волна существ из портала. Они не атакуют твои строения, но стремятся попасть в портал на другой стороне.</p>
           <p class="mb-6">Нужно строить башни рабочим, а уже они убивают всех существ. Каждую башню можно улучшать с помощью выученных заранее элементов.</p>
@@ -70,11 +101,53 @@
           <h4>Как выиграть?</h4>
           <p class="mb-6">Нужно быть последним выжившим или набрать максимальное количество очков в конце.</p>
           <h4>Продвинутые советы</h4>
-          <ul>
-            <li>У каждой башни будет свой элемент, как и у существ. Каждый элемент эффективен против одного, но слаб против другого. Например: вода эффективна против огня (посмотреть урон можно наведя курсор на цифры урона)</li>
+          <ul class="mb-6">
+            <li>У каждой башни будет свой элемент, как и у существ. Каждый элемент эффективен против одного, но слаб против другого. Например: вода эффективна против огня (посмотреть урон можно наведя курсор на цифры урона башня, или нажать на существо и навестись на его броню)</li>
             <li>Не стоит сильно вкладываться в один элемент. Нужно иметь 4-6 разных элементов одновременно, чтобы быть эффективным против разных существ.</li>
             <li>Несколько башен высокого уровня намного более эффективны, чем много слабых. Девиз этой игры: качество > количества</li>
           </ul>
+          <h4>Таблица элементов</h4>
+          <table class="table table-row-bordered gy-5 align-middle">
+            <thead>
+              <tr>
+                <td>Имя</td>
+                <td>Эффективен: <span class="badge badge-success">200%</span></td>
+                <td>Не эффективен: <span class="badge badge-danger">50%</span></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Earth</td>
+                <td><span class="badge badge-success">Nature</span></td>
+                <td><span class="badge badge-danger">Light</span></td>
+              </tr>
+              <tr>
+                <td>Darkness</td>
+                <td><span class="badge badge-success">Light</span></td>
+                <td><span class="badge badge-danger">Water</span></td>
+              </tr>
+              <tr>
+                <td>Water</td>
+                <td><span class="badge badge-success">Darkness</span></td>
+                <td><span class="badge badge-danger">Fire</span></td>
+              </tr>
+              <tr>
+                <td>Light</td>
+                <td><span class="badge badge-success">Earth</span></td>
+                <td><span class="badge badge-danger">Darkness</span></td>
+              </tr>
+              <tr>
+                <td>Nature</td>
+                <td><span class="badge badge-success">Fire</span></td>
+                <td><span class="badge badge-danger">Earth</span></td>
+              </tr>
+              <tr>
+                <td>Fire</td>
+                <td><span class="badge badge-success">Water</span></td>
+                <td><span class="badge badge-danger">Nature</span></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div class="card-footer fs-6">
           <ul>
