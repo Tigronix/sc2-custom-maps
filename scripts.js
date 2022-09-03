@@ -405,7 +405,7 @@ const locations = [
 const showLocations = () => {
   const app = document.querySelector('#app');
 
-  
+
   locations.map(item => {
     const { name, data, id: location_id } = item;
     app.insertAdjacentHTML('beforeend', `<div class="col-12"><h2>${name}</h2></div>`);
@@ -431,7 +431,7 @@ const showLocations = () => {
       `;
 
       app.insertAdjacentHTML('beforeend', template);
-       
+
       const currentLootList = app.querySelector(`#loot_list_${location_id}_${item.id}`)
       item.loot.forEach(lootItem => {
         const lootTemplate = `
@@ -445,4 +445,35 @@ const showLocations = () => {
   });
 };
 
-showLocations();
+// showLocations();
+const scrollTo = () => {
+  const btns = document.querySelectorAll('.js-menu-btn');
+  btns.forEach(btn => btn.addEventListener('click', () => {
+    const { href } = btn.dataset;
+    const element = document.querySelector(`#${href}`);
+
+    closeMenu();
+
+    document.querySelectorAll('.js-menu-btn').forEach(item => item.classList.remove('active'));
+    btn.classList.add('active');
+    
+    document.querySelectorAll('.js-card').forEach((card => card.classList.remove('active')));
+    element.querySelector('.js-card').classList.add('active');
+
+    window.scrollTo({
+      top: element.offsetTop - 70,
+      behavior: "smooth"
+    });
+
+  }))
+};
+
+scrollTo();
+
+const showMenu = () => {
+  document.querySelector('.js-menu').classList.add('active');
+}
+
+const closeMenu = () => {
+  document.querySelector('.js-menu').classList.remove('active');
+}
